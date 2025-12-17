@@ -1,0 +1,335 @@
+openapi: 3.0.3
+
+info:
+  title: MCP Calculator Server API
+  version: 1.0.0
+  description: >
+    API para operaciones aritméticas del MCP Calculator Server (add, subtract, multiply, divide),
+    diseñada para integrarse como herramienta calculadora en flujos con agentes y LLMs.
+  termsOfService: https://example.com/terms
+  contact:
+    name: Equipo MCP
+    email: anpaladinesgo@uide.edu.ec
+    url: https://github.com/StormXiz/MIDDLEWARE/PE-2.2-CALCULATOR
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:3000
+    description: Servidor local de desarrollo
+
+tags:
+  - name: Calculator
+    description: Operaciones matemáticas básicas
+
+security:
+  - apiKeyAuth: []
+  - bearerAuth: []
+
+paths:
+  /calculator/add:
+    post:
+      tags: [Calculator]
+      summary: Add two numbers
+      description: >
+        Suma dos números y retorna el resultado.
+        Autenticación documentada: enviar X-API-Key o Authorization: Bearer <token>.
+      security:
+        - apiKeyAuth: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OperationRequest"
+            examples:
+              normal:
+                summary: Suma normal
+                value:
+                  a: 10
+                  b: 5
+              negativos:
+                summary: Suma con números negativos
+                value:
+                  a: -3
+                  b: 7
+      responses:
+        "200":
+          description: Resultado exitoso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationResponse"
+              examples:
+                ok:
+                  summary: Resultado correcto
+                  value:
+                    result: 15
+        "400":
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                invalidInput:
+                  summary: Datos inválidos
+                  value:
+                    error: ValidationError
+                    message: a y b deben ser números
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                internal:
+                  summary: Error inesperado
+                  value:
+                    error: InternalError
+                    message: Error inesperado del servidor
+
+  /calculator/subtract:
+    post:
+      tags: [Calculator]
+      summary: Subtract two numbers
+      description: >
+        Resta b a a y retorna el resultado.
+        Autenticación documentada: enviar X-API-Key o Authorization: Bearer <token>.
+      security:
+        - apiKeyAuth: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OperationRequest"
+            examples:
+              normal:
+                summary: Resta normal
+                value:
+                  a: 20
+                  b: 6
+              negativo:
+                summary: Resultado negativo
+                value:
+                  a: 5
+                  b: 12
+      responses:
+        "200":
+          description: Resultado exitoso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationResponse"
+              examples:
+                ok:
+                  value:
+                    result: 14
+        "400":
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                invalidInput:
+                  value:
+                    error: ValidationError
+                    message: a y b deben ser números
+        "500":
+          description: Error interno
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                internal:
+                  value:
+                    error: InternalError
+                    message: Error inesperado del servidor
+
+  /calculator/multiply:
+    post:
+      tags: [Calculator]
+      summary: Multiply two numbers
+      description: >
+        Multiplica dos números y retorna el resultado.
+        Autenticación documentada: enviar X-API-Key o Authorization: Bearer <token>.
+      security:
+        - apiKeyAuth: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OperationRequest"
+            examples:
+              normal:
+                value:
+                  a: 7
+                  b: 6
+              porCero:
+                summary: Multiplicación por cero
+                value:
+                  a: 99
+                  b: 0
+      responses:
+        "200":
+          description: Resultado exitoso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationResponse"
+              examples:
+                ok:
+                  value:
+                    result: 42
+        "400":
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                invalidInput:
+                  value:
+                    error: ValidationError
+                    message: a y b deben ser números
+        "500":
+          description: Error interno
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                internal:
+                  value:
+                    error: InternalError
+                    message: Error inesperado del servidor
+
+  /calculator/divide:
+    post:
+      tags: [Calculator]
+      summary: Divide two numbers
+      description: >
+        Divide a entre b y retorna el resultado.
+        Autenticación documentada: enviar X-API-Key o Authorization: Bearer <token>.
+      security:
+        - apiKeyAuth: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OperationRequest"
+            examples:
+              normal:
+                value:
+                  a: 10
+                  b: 2
+              divisionPorCero:
+                summary: Caso especial división por cero
+                value:
+                  a: 10
+                  b: 0
+      responses:
+        "200":
+          description: Resultado exitoso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationResponse"
+              examples:
+                ok:
+                  value:
+                    result: 5
+        "400":
+          description: Error de validación o división por cero
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                divideByZero:
+                  summary: División por cero
+                  value:
+                    error: DivideByZero
+                    message: No se puede dividir para 0
+                invalidInput:
+                  value:
+                    error: ValidationError
+                    message: a y b deben ser números
+        "500":
+          description: Error interno
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+              examples:
+                internal:
+                  value:
+                    error: InternalError
+                    message: Error inesperado del servidor
+
+components:
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: >
+        API Key utilizada para identificar al consumidor del API.
+        Se envía en el header X-API-Key y se valida contra claves activas.
+        Recomendaciones: rotación de claves, rate limiting y logging.
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: >
+        Autenticación mediante Bearer Token (JWT) enviado en el header
+        Authorization: Bearer <token>. Permite autenticar y autorizar al cliente.
+        Mitigación de Tool Poisoning: validar estrictamente inputs, permitir solo campos esperados,
+        rechazar payloads inesperados y no ejecutar instrucciones provenientes del input del usuario.
+
+  schemas:
+    OperationRequest:
+      type: object
+      required:
+        - a
+        - b
+      properties:
+        a:
+          type: number
+          example: 10
+        b:
+          type: number
+          example: 2
+
+    OperationResponse:
+      type: object
+      required:
+        - result
+      properties:
+        result:
+          type: number
+          example: 5
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+        - message
+      properties:
+        error:
+          type: string
+          example: ValidationError
+        message:
+          type: string
+          example: a y b deben ser números

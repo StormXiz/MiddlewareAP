@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+
+    // Configuración del entorno (Node.js)
+    "module": "commonjs",
+    "target": "ES2020",
+    "lib": ["ES2020"],
+
+    // Estilos y seguridad del código
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
