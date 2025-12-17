@@ -1,0 +1,29 @@
+{
+  "name": "calculator",
+  "description": "Realiza operaciones aritméticas básicas: sumar, restar, multiplicar y dividir.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "operation": {
+        "type": "string",
+        "enum": [
+          "add",
+          "subtract",
+          "multiply",
+          "divide"
+        ],
+        "description": "Tipo de operación a realizar"
+      },
+      "a": {
+        "type": "number",
+        "description": "Primer operando"
+      },
+      "b": {
+        "type": "number",
+        "description": "Segundo operando"
+      }
+    },
+    "required": ["operation", "a", "b"],
+    "additionalProperties": false
+  }
+}
