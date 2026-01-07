@@ -1,0 +1,1067 @@
+WEBVTT
+
+00:00.000 --> 00:09.360
+Buenas tardes con todos, somos James Romero, José Kishpe, Ángel Paladines, mi persona,
+
+00:09.360 --> 00:15.840
+y hoy nos reunimos con el Magister Alex Cárdenas, coordinador de la carrera de marketing, para
+
+00:15.840 --> 00:19.800
+presentar nuestra propuesta de proyecto y realización del levantamiento inicial de
+
+00:19.800 --> 00:25.320
+requisitos e información del sistema del centro UID de apoyo y co-creación por emprendimientos.
+
+00:25.320 --> 00:29.160
+Esta reunión está siendo grabada únicamente con fines educativos,
+
+00:29.160 --> 00:34.240
+de documentación y elaboración del acto. Con esto dicho, iniciamos la reunión.
+
+00:35.960 --> 00:39.320
+Introducción al proyecto. La continuación queremos presentar
+
+00:39.320 --> 00:44.800
+previamente la propuesta del proyecto. La idea consiste en desarrollar un sistema web para el
+
+00:44.800 --> 00:48.920
+centro UID de apoyo y co-creación para emprendimientos, cuyo objetivo es apoyar,
+
+00:48.920 --> 00:54.920
+organizar y dar visibilidad a los emprendimientos de la comunidad UID. El sistema busca centralizar
+
+00:54.920 --> 01:00.320
+información sobre emprendimientos, asesorías, eventos y procesos de apoyo, facilitando la
+
+01:00.320 --> 01:05.760
+gestión tanto para los administradores como para los emprendedores. Por ello, esta reunión tiene
+
+01:05.760 --> 01:11.520
+finalidad de recoger su experiencia y criterio para definir correctamente los requisitos,
+
+01:11.520 --> 01:18.760
+funcionalidades y alcance inicial del sistema. Como primera pregunta, queremos preguntar lo que
+
+01:18.760 --> 01:23.200
+sería el enfoque general del centro. Desde su experiencia, ¿qué necesidades principales
+
+01:23.280 --> 01:28.280
+debería tener un centro de apoyo y co-creación para emprendimientos en la universidad?
+
+01:28.280 --> 01:35.800
+Ya, yo creo que aquí en la universidad debe tener un centro que esté enfocado en tres
+
+01:35.800 --> 01:45.080
+servicios importantes. El primero, ayudarle al estudiante a que pueda desarrollar, mejorar su
+
+01:45.080 --> 01:51.720
+idea, mejorar su proyecto. ¿En qué sentido? Hay estudiantes que dicen, tengo esta bebida,
+
+01:51.720 --> 01:58.520
+tengo este chocolate o tengo esta aplicación, pero lo hacen desde su perspectiva. ¿Qué significa?
+
+02:00.120 --> 02:06.040
+Siento que el chocolate sale rico, pienso que ese es el óptimo para abrirse en el mercado. En
+
+02:06.040 --> 02:11.760
+cambio, el producto debe ser diseñado a la función del cliente porque él es el que paga. Y para eso
+
+02:11.760 --> 02:17.680
+hay un proceso. Yo creo que el primer servicio es ayudarle a que desarrolle mejor su proyecto
+
+02:17.680 --> 02:23.480
+de emprendimiento. El segundo, brindarle servicios complementarios a su negocio,
+
+02:23.480 --> 02:33.400
+como por ejemplo marketing, temas financieros, temas legales, y también asesoramiento para que
+
+02:33.400 --> 02:40.280
+puedas desarrollar sus capacidades empresariales. Y lo último, considero que debería ser un
+
+02:40.880 --> 02:45.880
+módulo enfocado en la comercialización. ¿Qué significa? Que te ayude a abrir contactos,
+
+02:45.880 --> 02:53.840
+que te diga, mira, sabes qué, justo soy amigo de los de Cádiz y Talba, hablé con ellos y estaría
+
+02:53.840 --> 03:00.000
+dispuestos a que tu producto entre en ese espacio. Porque ojo, los acuerdos comerciales en el mercado
+
+03:00.000 --> 03:06.120
+se hacen en función de confianza. Por eso ustedes ven muy productos muy buenos que no están todavía
+
+03:06.120 --> 03:11.280
+en los supermercados. ¿Por qué? Porque a veces el dueño del supermercado no lo conoce al emprendedor,
+
+03:11.280 --> 03:16.160
+no confía, etc. Entonces yo creo que esos deben ser los tres principales servicios que se deben
+
+03:16.160 --> 03:22.920
+brindar. Perfecto. Como es la siguiente pregunta, dice, ¿cómo le gustaría que este centro aporte a la imagen
+
+03:22.920 --> 03:30.160
+institucional y al área marketing de la vida? Bueno, yo realmente digo que este centro, la forma
+
+03:30.160 --> 03:35.480
+de cómo nos puede aportar es haciendo que los estudiantes tengan una verdadera conexión
+
+03:35.480 --> 03:43.080
+empresarial. O sea que tengan como este resultado de que tú emprendes y estás creciendo, que la
+
+03:43.080 --> 03:49.680
+universidad te está ayudando. Eso nos va a permitir en marketing vender de mucha mejor manera. Porque yo
+
+03:49.680 --> 03:58.720
+puedo decir, ustedes tres no se graduaron, somos ingenieros en sistemas, sino que ustedes tuvieron
+
+03:58.720 --> 04:03.560
+su título, pero ya tienen sorpresa con ventas. ¿Se dan cuenta? Es muy diferente.
+
+04:07.200 --> 04:14.000
+¿Qué debería priorizar una plataforma institucional, el centro de apoyo, para generar valor real a los
+
+04:14.000 --> 04:19.480
+emprendedores desde su primera versión? Yo digo lo que deben priorizar es el tema del uso de las
+
+04:19.480 --> 04:26.200
+tecnologías. Ahí ustedes tienen un rol muy importante porque el emprendedor no sabe cómo usar la tecnología
+
+04:26.200 --> 04:33.440
+en su favor. Para procesos, para producción, para comercialización, para inventarios. Entonces yo creo
+
+04:33.440 --> 04:39.800
+que este centro debe como hacer que los proyectos se conviertan en startups. Porque ojo, está
+
+04:39.800 --> 04:46.680
+comprobado que una startup tiene mejores condiciones para crecer y convertirse en un unicornio. ¿Qué son
+
+04:46.680 --> 04:52.600
+empresas unicornias? Empresas que faturan más de un millón de dólares. ¿Cuáles son las que han faturado
+
+04:52.600 --> 05:00.600
+más de un millón de dólares? Netflix, L.A.B., Google, Amazon. En el ecuador, Bushki. ¿Se dan cuenta? ¿Por qué?
+
+05:00.600 --> 05:07.800
+Porque usan la tecnología dentro de sus operaciones. Usted comienza bastante tiempo en este campo del marketing.
+
+05:07.800 --> 05:14.400
+¿Cuáles son los errores más comunes que se cometen al intentar digitalizar procesos de apoyo al emprendimiento?
+
+05:14.400 --> 05:23.840
+Confundir lo que es marketing con digital. Transformación y digitalización de una empresa. Muchas personas
+
+05:23.840 --> 05:30.520
+piensan que el marketing digital es transformación digital. Entonces ese es el error más común. El marketing
+
+05:30.520 --> 05:38.160
+digital es el uso de las herramientas para publicitar, comercializar, vender y posicionarte. La transformación
+
+05:38.160 --> 05:47.520
+digital en cambio es una cultura empresarial. Al interno de esos procesos, automatizas, utilizas domótica,
+
+05:47.520 --> 05:53.680
+un montón de cosas. ¿Se dan cuenta? Entonces primero es eso. Segundo también que el emprendedor no sabe
+
+05:53.680 --> 06:01.000
+utilizar las herramientas digitales. Hoy en día el chat GPT es una herramienta muy elemental para que
+
+06:01.000 --> 06:09.720
+el emprendedor pueda crear contenidos, elaborar propuestas, crear estrategias, auto formarse. Entonces es un montón de
+
+06:09.720 --> 06:21.760
+posibilidades. Y otro de los errores es que los emprendedores no saben cómo llevar adelante su proyecto. Ellos están a la espera de alguien más.
+
+06:21.760 --> 06:30.320
+¿Qué significa eso? Ustedes hacen su bebida y esperan a que el municipio haga una feria para ir a pedir. Pero no. Es un tema
+
+06:30.640 --> 06:37.640
+que mira, haces la bebida, mañana andate al supermercado X. Te va a decir que no, no hay problema. Pasaba el otro. Te va a decir que sí.
+
+06:37.640 --> 06:47.160
+El otro probablemente te va a decir que sí. El otro que no, pero vas creciendo. Cuando vea el más grande de que tú estás metido en
+
+06:47.160 --> 06:55.280
+10 tiendas de barrio, el supermercado más grande va a decir yo también quiero. Cuando veas que estás en supermercados medianos,
+
+06:56.240 --> 07:04.240
+el supermercado más grande de la ciudad va a decir venga acá. ¿Te dan cuenta? En cambio el emprendedor quiere ir de una al grande.
+
+07:04.240 --> 07:13.240
+Porque piensa que ahí hay mercado, porque piensa que ahí hay ventas aseguradas. Si no, váyanse al supermáximo. Encuentran un montón de marcas,
+
+07:13.240 --> 07:23.240
+un montón de productos y a cuál vamos a consumir a los que más conocemos. Marcas nuevas todavía no nos arriesgamos en consumir.
+
+07:26.240 --> 07:32.240
+Mi siguiente pregunta sería, ¿qué aspectos valoran más los emprendedores para interactuar con un centro de apoyo?
+
+07:32.240 --> 07:37.240
+Ya sea visibilidad, acompañamiento, seguimiento o acceso a recursos.
+
+07:39.240 --> 07:48.240
+El tema de acceso a recursos no es algo que un centro de emprendimiento deba brindar. De hecho muy pocos, muy pocos centros en el mundo lo hacen.
+
+07:49.200 --> 07:59.200
+Y cuando lo hacen es porque alguien más está detrás dando dinero. Entonces lo que yo más digo de un centro de emprendimiento lo que el emprendedor valora
+
+07:59.200 --> 08:05.200
+es la asesoría, esos contactos y el acompañamiento.
+
+08:08.200 --> 08:13.200
+¿Qué información considera clave que un emprendedor pueda adicionar directamente dentro de la plataforma?
+
+08:14.160 --> 08:21.160
+¿Qué información considera clave que un emprendedor pueda gestionar directamente dentro de la plataforma?
+
+08:22.160 --> 08:27.160
+Todo lo que debe hacer al momento de constituir un negocio. Eso es fundamental.
+
+08:28.160 --> 08:38.160
+El emprendedor no sabe por ejemplo qué tipo de rubes sacar, no sabe qué permís, qué tributos, qué permisos, qué cosas debe sacar.
+
+08:39.120 --> 08:43.120
+No sabe qué opción tomar. Me toco en el camino que dicen yo hice una empresa.
+
+08:43.120 --> 08:46.120
+Digo, ¿por qué hizo una empresa? No haces que son una más bonita.
+
+08:47.120 --> 08:51.120
+Decir que soy empresario. Y luego se dan cuenta que es una carga, es un montón.
+
+08:52.120 --> 08:58.120
+Entonces yo les digo, a ver, te haces una empresa cuando quieres crecer, cuando has tenido ya una facturación, tienes ventas, tienes una estructura,
+
+08:59.120 --> 09:04.120
+le mandas de más equipo. Y quieres cuidar tu patrimonio, que no se involucre con tu negocio.
+
+09:05.080 --> 09:07.080
+Entonces todo eso yo digo es fundamental.
+
+09:08.080 --> 09:16.080
+También yo pondría dentro de la plataforma los servicios que prestan los diferentes sectores e instituciones del entrenamiento.
+
+09:17.080 --> 09:20.080
+Así tú emprendes y dices a ver quién podrá dar una capacitación.
+
+09:21.080 --> 09:27.080
+Entras a la plataforma y para irse a la UID tienen un programa de incubación empresarial.
+
+09:28.080 --> 09:32.080
+Dices, ¿quién me podrá ayudar con el permiso del registro de la marca?
+
+09:33.040 --> 09:37.040
+Ves y dices, este bufete legal requiere sumares.
+
+09:42.040 --> 09:49.040
+Quería preguntarle, ¿qué tipo de información debería mostrarse públicamente para dar visibilidad a los emprendimientos sin afectar su competencia?
+
+09:51.040 --> 09:54.040
+O sea yo digo, debería hacerse un catálogo.
+
+09:55.040 --> 09:57.040
+Ahí sí, favorecer, sí más y menos.
+
+09:58.000 --> 10:03.000
+Debería hacerse un catálogo en el que esté establecido por rubros, en el cual digan,
+
+10:04.000 --> 10:06.000
+a ver si quieres chocolates, estas son las marcas.
+
+10:07.000 --> 10:10.000
+Sin favorecer a uno más, sin dejar su propuesta de valor.
+
+10:11.000 --> 10:18.000
+Más bien yo haría como que se linke a sus propios espacios digitales para que la gente conozca y se convence.
+
+10:18.960 --> 10:27.960
+¿Y qué recomendaciones daría para que la plataforma institucional del centro de apoyo se mantenga activa y útil en este tiempo?
+
+10:28.960 --> 10:29.960
+O sea, no se quede obsoleta.
+
+10:30.960 --> 10:34.960
+Yo vuelvo a decir, y lo mismo que le dije al grupo de la mañana,
+
+10:35.960 --> 10:42.960
+para que estos servicios institucionales tengan esta actividad, hay que darle más enfoque a más de su propósito.
+
+10:43.920 --> 10:50.920
+Porque hay muchas aplicaciones, hay muchas plataformas que se quedan obsoletas y dejan de ser utilizadas.
+
+10:53.920 --> 11:01.920
+Entonces yo considero que para eso, yo considero que ustedes deben hacer un ejercicio con los estudiantes.
+
+11:02.920 --> 11:08.920
+Y les puedo preguntar, mira estamos haciendo una plataforma para emprendedores o de un centro de emprendimiento digital.
+
+11:09.880 --> 11:12.880
+¿Qué cosas te gustaría que tenga a más del emprendimiento?
+
+11:13.880 --> 11:15.880
+Que un estudiante les diga, mira, mi evento.
+
+11:16.880 --> 11:20.880
+Me gustaría que me informe acerca de cuáles son los beneficios que tiene la OID.
+
+11:21.880 --> 11:24.880
+O me gustaría que imprima los cupones para ir a saber dónde debo comer.
+
+11:25.880 --> 11:26.880
+O una cartelera de eventos.
+
+11:27.880 --> 11:31.880
+Hay que lograr que estas plataformas se conviertan en un medio, ¿sí?
+
+11:32.880 --> 11:33.880
+No en un momento.
+
+11:34.840 --> 11:39.840
+En un momento es, yo quiero emprender, entro a la página y veo los requisitos, listo.
+
+11:40.840 --> 11:41.840
+Nunca más volví.
+
+11:42.840 --> 11:44.840
+¿Se da cuenta? Ahí no es sostenible.
+
+11:45.840 --> 11:50.840
+El cambio medio es que, oye, entro con los requisitos, pero mañana diálogo, pasado encuentro,
+
+11:51.840 --> 11:55.840
+pasado yo mismo puedo limpiar, mismo yo puedo hacer un CRM.
+
+11:56.800 --> 12:00.800
+Entonces yo creo que ahí ustedes tienen que hacer un juego importante para saber qué cosas el estudiante
+
+12:01.800 --> 12:04.800
+podría necesitar que esta plataforma les pueda usar.
+
+12:05.800 --> 12:06.800
+Ahí va a tener mucho uso.
+
+12:07.800 --> 12:08.800
+Perfecto.
+
+12:09.800 --> 12:14.800
+¿Conciente, qué opciónes considera que debería poder realizar directamente el área de marketing dentro del sistema?
+
+12:15.800 --> 12:20.800
+Ya, yo creo que ahí es netamente estrategias de comercialización e impulso de los productos.
+
+12:21.800 --> 12:22.800
+No puede hacer más.
+
+12:23.800 --> 12:24.800
+O sea, desde el área de marketing.
+
+12:25.760 --> 12:28.760
+La otra parte la hace el dueño del negocio, el estudiante.
+
+12:29.760 --> 12:32.760
+Pero el área de marketing es, vamos a hacer un evento, una feria.
+
+12:33.760 --> 12:36.760
+Vamos a hacer un encuentro empresarial.
+
+12:37.760 --> 12:41.760
+Vamos a hacer un reel contando los productos que hay en la plataforma.
+
+12:42.760 --> 12:44.760
+Entonces es más impulsamiento y publicidad.
+
+12:45.760 --> 12:53.760
+¿Me parecería útil poder filtrar o clasificar los emprendimientos por estado, tipo nivel de avance que vaya teniendo?
+
+12:54.720 --> 13:08.720
+Yo más bien no en eso, porque no hay en el mundo un parámetro que te permita decir, tú crees que tu negocio va a nivel 2 o va a nivel 10.
+
+13:09.720 --> 13:10.720
+No.
+
+13:11.720 --> 13:13.720
+Hay cuatro cosas que se consideran para el crecimiento del negocio.
+
+13:14.720 --> 13:15.720
+Técnicamente.
+
+13:16.720 --> 13:22.720
+Número de empleados, número de facturación, años de servicios y lugares en los que opera.
+
+13:23.680 --> 13:29.680
+Con eso se considera pequeña, mediana, naciente, grande, unicornio, todo eso.
+
+13:30.680 --> 13:32.680
+Son los cuatro factores.
+
+13:33.680 --> 13:37.680
+Pero en LOHAC y probablemente en estudiantes no van a poder hacer visible eso.
+
+13:38.680 --> 13:39.680
+¿Se dan cuenta?
+
+13:40.680 --> 13:48.680
+Porque para que un estudiante llegue a ser un unicornio, podría ser que tenga un vida ganadora y en dos meses sea un unicornio como tú puedes que sea en 20 años o 30.
+
+13:49.640 --> 13:53.640
+Entonces yo más bien les recomiendo que hagan una clasificación por rubros.
+
+13:54.640 --> 13:55.640
+¿Qué significa?
+
+13:56.640 --> 14:01.640
+Artesanías, deporte, belleza, moda, textiles, cosas así.
+
+14:02.640 --> 14:08.640
+Aeros, postres, todo eso para irlos como agrupando en sectores híbrides de atención.
+
+14:09.600 --> 14:17.600
+¿Esto cree necesario que es necesario contar con un espacio donde el área de marketing puede sacar a formacionar ciertos emprendimientos por los emprendedores?
+
+14:18.600 --> 14:19.600
+Sí, sí, sí.
+
+14:20.600 --> 14:29.600
+Tendríamos que montar un store donde los productos de los estudiantes puedan ser comercializados, puedan ser visibles, todo ese tipo de cosas.
+
+14:31.600 --> 14:37.600
+¿Qué tipo de herramientas facilitarían la discusión de los estudiantes?
+
+14:38.560 --> 14:41.560
+¿Qué tipo de herramientas facilitarían la discusión de emprendimientos desde el sistema?
+
+14:42.560 --> 14:47.560
+Redes sociales, e-mail y también la aplicación.
+
+14:48.560 --> 14:51.560
+Una aplicación que los estudiantes puedan tener acceso.
+
+14:52.560 --> 15:03.560
+O sea ustedes se podrían aclarar la aplicación del Jueves de la mañana, pero hoy tienen que lograr que esta red social se vuelva muy usable para que lleguen sus recomendaciones.
+
+15:04.520 --> 15:06.520
+El Jueves de la mañana está haciendo una aplicación móvil, ¿no es cierto?
+
+15:07.520 --> 15:09.520
+Nosotros creamos ser una aplicación web.
+
+15:10.520 --> 15:11.520
+Entonces se van conectando.
+
+15:12.520 --> 15:13.520
+Sí.
+
+15:14.520 --> 15:18.520
+¿Le gustaría que el sistema permita registrar actividades de promociones realizadas a cada emprendimiento?
+
+15:19.520 --> 15:20.520
+Sí.
+
+15:21.520 --> 15:22.520
+Esto tiene que estar ligado con marketing.
+
+15:23.520 --> 15:26.520
+Hacer marketing online y marketing online.
+
+15:27.520 --> 15:28.520
+¿Qué significa online?
+
+15:29.480 --> 15:32.480
+Significa que ustedes pueden decir, vamos a hacer el cyber model.
+
+15:33.480 --> 15:38.480
+El lunes, todos los que entren en la plataforma van a recibir dos por uno o diez por ciento de descuento.
+
+15:39.480 --> 15:50.480
+Y en lo físico, en cambio, aquí hay afiches, que haya señales éticas en el campus que digan, entra a la plataforma y aprovecha los productos que están en descuento.
+
+15:51.480 --> 15:52.480
+¿Están a cuenta?
+
+15:52.480 --> 15:53.480
+Sí.
+
+15:54.440 --> 15:59.440
+¿Qué información le ayudaría a identificar qué emprendimientos están activos, estancados o finalizados?
+
+16:00.440 --> 16:04.440
+Ya, yo mucho me doy cuenta de que no lo crean, porque esa es otra cosa.
+
+16:05.440 --> 16:15.440
+Si ustedes entran a la base de datos del SRI, pueden que encuentren a Alex, emprendedor, con un root desde 1999.
+
+16:16.400 --> 16:23.400
+Pero pueda que yo llegue y diga, sí, lo tengo activo por cualquier día que me llegue un proyecto, pero no fue en octubre o no en noventa.
+
+16:24.400 --> 16:27.400
+Entonces, el dato del SRI no es tan confiable.
+
+16:28.400 --> 16:29.400
+¿Me voy a entender?
+
+16:30.400 --> 16:35.400
+Entonces, a lo que yo voy para darme cuenta si ese negocio está activo, muchos sus redes sociales.
+
+16:36.360 --> 16:43.360
+Si yo veo que una red social está abandonada y aún cae sin publicaciones y nada, significa que ese emprendimiento ya dejó de funcionar.
+
+16:44.360 --> 16:58.360
+Miren, o sea, no es técnico lo que decimos, pero es un medio más tranquilo a mí que ir al SRI y ver que hace diez años Alex abrió el root y pensar que porque sigue activo, todavía está en cooperaciones.
+
+16:59.360 --> 17:01.360
+Ahí falta todavía hacer algo.
+
+17:02.320 --> 17:08.320
+¿Se considera necesario que el sistema registre interacciones como asesorías, eventos o participaciones externas?
+
+17:09.320 --> 17:15.320
+Sí, sí, que se conecte con varios, le dé esa opción del ecosistema.
+
+17:16.280 --> 17:38.280
+Una pregunta acá, hace rato mencionó que a veces se ayudan con un chanjepete, ¿consideraría que es necesario implementar un sistema de IA o coger el lápiz de algún IA y ponerle en el sistema para que, aparte de lo que dejan suceder ya los sacaran?
+
+17:39.240 --> 17:45.240
+Sí, que se conecte, que les vaya asesorando, que les tenga un charboto, que los lleven.
+
+17:49.240 --> 17:53.240
+¿Qué información considera apropiada mostrar públicamente sobre los emprendimientos?
+
+17:54.240 --> 18:02.240
+Sus contactos, una descripción del producto y cómo pueden comprar o dónde los pueden comprar.
+
+18:03.200 --> 18:09.200
+¿Puede mejorar la visibilidad y percepción de los proyectos ante la comunidad?
+
+18:10.200 --> 18:18.200
+Honestamente depende mucho del uso de la plataforma, ese es el reto que tienen ustedes.
+
+18:19.200 --> 18:23.200
+Podría sí, siempre y cuando sea una página muy bien posicionada.
+
+18:24.160 --> 18:31.160
+O por ejemplo, ustedes entran a la página de la UID, no entran por información.
+
+18:32.160 --> 18:35.160
+¿Cuándo entraron por información? La primera vez que quieren matricularse.
+
+18:36.160 --> 18:51.160
+De ahí no volverían a entrar nunca más, se dan cuenta, pero ustedes siguen entrando a la página porque ahí está la biblioteca virtual, por ahí acceden al canvas, por ahí acceden a sus notas, se dan cuenta, por ahí acceden al correo.
+
+18:52.120 --> 18:57.120
+Entonces ustedes tienen que acceder a la gente, a eso me refiero, que use esa plataforma.
+
+18:58.120 --> 19:06.120
+¿Puedo ver una sección de promociones, una sección de los emprendimientos para llamar la atención de gente?
+
+19:07.120 --> 19:10.120
+¿De qué decir, mañana me voy a aumentar la pena para ver qué hay de nuevo?
+
+19:11.120 --> 19:16.120
+Exacto, solo así haces. Yvonne espérenme un segundo por favor, estoy saliendo de tutorial ya.
+
+19:17.080 --> 19:22.080
+Entonces, solo así logras que haya uso.
+
+19:23.080 --> 19:32.080
+Pero vuelvo a decir, si la haces solo de emprendimiento significa que tú vas a entrar a la plataforma solo cuando quieras comprar un producto o solo cuando quieras venderla.
+
+19:33.080 --> 19:36.080
+Entonces solo me estás conectando un momento.
+
+19:37.040 --> 19:50.040
+Se han dado cuenta, analicen muy bien Amazon, se han dado cuenta que Amazon, Amazon es lo que ustedes buscan, Amazon tiene blogs, tiene un montón de cosas, ¿sabes?
+
+19:51.040 --> 20:01.040
+Eso es el tema de hacer que la gente use su plataforma para algo más que no necesariamente sea la compra y venta, porque ahí se va a volver muy condicionante.
+
+20:02.000 --> 20:06.000
+Yo voy a entrar a la plataforma solo cuando quiera comprar el producto.
+
+20:07.000 --> 20:11.000
+Y como son estudiantes de la UID, yo tengo que tener un orgullo por la UID.
+
+20:12.000 --> 20:16.000
+¿Se dan cuenta? ¿Qué significa eso? ¿Yo quiero un chocolate y diga?
+
+20:17.000 --> 20:22.000
+No, es que como la UID es una universidad, les voy a comprar a los chicos que están emprendiendo la UID.
+
+20:23.000 --> 20:26.000
+¿Se dan cuenta? Así tendría que pensar el consumidor.
+
+20:27.000 --> 20:30.000
+¿Y si no tienes orgullo?
+
+20:32.000 --> 20:35.000
+Para decir que quiero chocolate, lo busco en cualquier otro lado. ¿Nos damos cuenta?
+
+20:36.000 --> 20:40.000
+Entonces por eso hay que pensar muy bien en esa experiencia.
+
+20:41.000 --> 20:52.000
+Disculpe también, en la aplicación sería bueno o sería útil en base a su experiencia de que mediante el número de visibilidad o clics queden en un producto.
+
+20:53.000 --> 20:54.000
+Por ejemplo un chocolate.
+
+20:55.000 --> 20:59.000
+Yo más que en clics, yo pondría el ranking de los productos más comprados.
+
+20:59.960 --> 21:06.960
+Para por ejemplo decir a un emprendedor, este producto no está siendo muy viciable, ¿puedes cambiar tal cosa?
+
+21:07.960 --> 21:10.960
+Sí, él te va a hacer siempre y cuando veta.
+
+21:11.960 --> 21:13.960
+Si no, no te lo hace.
+
+21:14.960 --> 21:16.960
+¿Puede ser como un ranking para que tu producto no funcione?
+
+21:17.960 --> 21:23.960
+Claro, pero ahí tienes que demostrar que efectivamente,
+
+21:24.920 --> 21:26.920
+a neil y un segundo ya,
+
+21:27.920 --> 21:34.920
+tienes que demostrar efectivamente que tienes dos millones de personas en la plataforma.
+
+21:35.920 --> 21:38.920
+Solo ahí le puedes decir al emprendedor, pero a Alex,
+
+21:39.920 --> 21:42.920
+han entrado dos millones de personas pero nadie ha visto tu producto.
+
+21:43.920 --> 21:50.920
+Es porque te falta tener una buena foto, te falta tener un video, te falta poner tus redes.
+
+21:51.880 --> 21:55.880
+Ahí tienen que pensar en que hablen del algoritmo de TripAdvisor y de Airbnb.
+
+21:56.880 --> 22:01.880
+Por ejemplo Airbnb va a TripAdvisor y notifica los restaurantes.
+
+22:02.880 --> 22:06.880
+Yo tengo también un grupo de restaurantes, entonces te notifica y te dice,
+
+22:07.880 --> 22:12.880
+Alex, estás en la posición 4 de todos los restaurantes en Loja.
+
+22:13.880 --> 22:16.880
+Para que subas a la 1, tienes que hacer tales cosas.
+
+22:17.840 --> 22:24.840
+Y luego te dicen, Alex, 12 mil personas han entrado y como estás en la 4a opción,
+
+22:25.840 --> 22:26.840
+solo te han visto 300.
+
+22:27.840 --> 22:28.840
+Mejora esto, mejora esto, mejora esto.
+
+22:29.840 --> 22:30.840
+Entonces ahí tú incentivas.
+
+22:31.840 --> 22:34.840
+¿Se dan cuenta? Ahí, porque te demuestra que tienes ventas.
+
+22:35.840 --> 22:38.840
+Ajá, en cambio Airbnb tiene un modelo diferente.
+
+22:39.840 --> 22:42.840
+Airbnb te dice, tienes que crear contenido,
+
+22:43.840 --> 22:46.840
+cumplir todos los pasos para nosotros ponerte las primeras ocupaciones.
+
+22:47.840 --> 22:52.840
+Pero como la gente ve que es factible, no sé si ustedes el alquilac en Airbnb,
+
+22:53.840 --> 22:59.840
+pero la gente dice, ah yo subo mi habitación y de efectivamente el alquilado.
+
+23:00.840 --> 23:03.840
+¿Se dan cuenta? Es algo comprobable.
+
+23:04.840 --> 23:09.840
+Porque ojo, si a mí me haces que haga una foto, un video, una descripción,
+
+23:10.840 --> 23:14.840
+el catálogo, todas las semanas estés publicando cosas y no genero ventas,
+
+23:15.800 --> 23:19.800
+eh, no, yo no voy a seguir en la plataforma como emprendedor.
+
+23:20.800 --> 23:22.800
+Y eso te digo, la diferencia entre Sainy y Clip.
+
+23:23.800 --> 23:28.800
+No sé si sabían que Clip está cerrando su módulo de gastronomía, de tiendas.
+
+23:29.800 --> 23:33.800
+¿Por qué? Porque Clip no está vendiendo mucho a los negocios.
+
+23:34.800 --> 23:39.800
+Entonces te llega un pedido a Clip una vez a los dos, tres meses.
+
+23:40.760 --> 23:45.760
+El Sainy te llega cada semana y si eres un restaurante más visible,
+
+23:46.760 --> 23:47.760
+te llega todos los días pedidos.
+
+23:48.760 --> 23:52.760
+Entonces ahí si tú te interesas y tú dices, claro, Sainy me dice que ahora hago un video,
+
+23:53.760 --> 23:56.760
+hago una campaña, hago esto, debo una y yo lo hago.
+
+23:57.760 --> 23:58.760
+Porque estoy viendo el resultado.
+
+23:59.760 --> 24:03.760
+Pero en Clip no se me ocurre ni siquiera publicar en mis redes diciendo,
+
+24:04.760 --> 24:08.760
+compranos en Clip porque sé que esa es una aplicación que no está teniendo aún.
+
+24:09.720 --> 24:13.720
+Y también les gustaría la funcionalidad de puntuar,
+
+24:14.720 --> 24:18.720
+calificar el emprendimiento, el producto, dejar una reseña.
+
+24:19.720 --> 24:22.720
+Claro, también es importante porque así le dan seguridad al comprador.
+
+24:23.720 --> 24:25.720
+Ustedes tienen que pensar de los dos lados.
+
+24:26.720 --> 24:28.720
+Miren, su proyecto es bonito pero es complejo.
+
+24:29.720 --> 24:31.720
+Porque ustedes tienen que buscar cómo contentar al emprendedor.
+
+24:32.720 --> 24:35.720
+El emprendedor se va a contentar si le das la información buena,
+
+24:36.680 --> 24:39.680
+si le das herramientas y si le ayudas a vender.
+
+24:40.680 --> 24:41.680
+Se da cuenta.
+
+24:42.680 --> 24:45.680
+Y el cliente se va a contentar si le llega el producto,
+
+24:46.680 --> 24:51.680
+si el producto cumple las condiciones y si no es estafado, etc.
+
+24:54.680 --> 24:55.680
+¿Qué otro más?
+
+24:56.680 --> 25:00.680
+¿Le parecía útil que el sistema funcione también como vitrina institucional de emprendimientos?
+
+25:01.680 --> 25:03.680
+Sí, podría ser también.
+
+25:04.640 --> 25:11.640
+Como les digo, va a ser útil siempre cuando esa plataforma tenga un gran uso.
+
+25:12.640 --> 25:13.640
+Un gran uso.
+
+25:14.640 --> 25:17.640
+No sé si han escuchado alguna vez el tema de...
+
+25:21.640 --> 25:24.640
+Un momentito, mientras estoy saliendo del tutorial.
+
+25:25.640 --> 25:29.640
+Entonces, no sé si ustedes han escuchado alguna vez el tema de...
+
+25:30.600 --> 25:31.600
+Hubo enloja...
+
+25:32.600 --> 25:33.600
+No es enloja.
+
+25:34.600 --> 25:35.600
+Así que es enloja.
+
+25:36.600 --> 25:38.600
+Bueno, no sé si han visto ustedes o han entrado.
+
+25:39.600 --> 25:41.600
+Ricondelvago.com
+
+25:42.600 --> 25:43.600
+¿No han entrado?
+
+25:44.600 --> 25:45.600
+Vamos a ver.
+
+25:46.600 --> 25:48.600
+Miren, esta se volvió su plataforma muy visitada.
+
+25:49.600 --> 25:52.600
+¿Por qué? Porque tú subías deberes y encontrabas deberes.
+
+25:53.600 --> 25:54.600
+¿Te das cuenta?
+
+25:55.600 --> 25:57.600
+Entonces le diste un fin a la plataforma.
+
+25:58.560 --> 26:01.560
+Y ya luego ellos empezaron a poner anuncios.
+
+26:02.560 --> 26:04.560
+Gente que hacía tesis, gente que hacía ejercicios.
+
+26:05.560 --> 26:06.560
+Ahí empezaron a cobrar.
+
+26:07.560 --> 26:13.560
+Ya te bloqueaban ciertas partes del ejercicio matemático, del ensayo, del resumen del libro.
+
+26:14.560 --> 26:15.560
+¿Te das cuenta?
+
+26:16.560 --> 26:17.560
+Porque entendieron ese interés.
+
+26:18.560 --> 26:23.560
+Ahora aquí nosotros tenemos que intentar eso para que haya ese uso en la plataforma.
+
+26:24.560 --> 26:25.560
+Ahí sí me interesa.
+
+26:26.520 --> 26:31.520
+Alex, la UID tiene una plataforma que lo visitan 20.000 estudiantes.
+
+26:32.520 --> 26:33.520
+¿Te gustaría que te publicite?
+
+26:34.520 --> 26:35.520
+Sí.
+
+26:36.520 --> 26:37.520
+Hasta yo les pago por estar en la plataforma.
+
+26:38.520 --> 26:39.520
+¿Te das cuenta?
+
+26:40.520 --> 26:44.520
+Sube también una funcionalidad seria, por ejemplo, no sé si serviría o sería buena.
+
+26:45.520 --> 26:47.520
+Por ejemplo, usted busca la categoría postres.
+
+26:48.480 --> 26:56.480
+¿Sería bueno que primero salga por orden alfabético o por clasificaciones o por emprendimientos nuevos?
+
+26:57.480 --> 26:58.480
+¿Qué sería lo más óptimo?
+
+26:59.480 --> 27:00.480
+No, yo digo por rubros.
+
+27:01.480 --> 27:03.480
+No pongan emprendimientos nuevos o emprendimientos antiguos.
+
+27:04.480 --> 27:06.480
+Porque eso va a ser un tema de doble filo.
+
+27:07.480 --> 27:10.480
+Por ejemplo, Alex hoy día abrió el emprendimiento de bebidas.
+
+27:11.480 --> 27:13.480
+Si no soy conocido, no es atractivo.
+
+27:14.480 --> 27:15.480
+¿Te das cuenta?
+
+27:16.440 --> 27:21.440
+Entonces yo más bien les digo pongan por rubros, dulces, moda.
+
+27:22.440 --> 27:25.440
+Pero más o menos para clasificar el orden de eso ¿cómo sería?
+
+27:26.440 --> 27:27.440
+Conforme ellos en orden alfabético.
+
+27:28.440 --> 27:29.440
+¿En orden alfabético?
+
+27:30.440 --> 27:33.440
+Sí, es panadería, PA, PE, PI.
+
+27:34.440 --> 27:35.440
+Que tengan súper claro.
+
+27:36.440 --> 27:38.440
+Así ustedes no tienen también favoritismos.
+
+27:39.440 --> 27:44.440
+Porque pueden llegar a un rato que les digan, mira, Juan abrió el negocio ayer y está en primer lugar.
+
+27:45.400 --> 27:48.400
+Yo llevo cinco años no vendo y estoy último.
+
+27:49.400 --> 27:50.400
+¿Te das cuenta?
+
+27:51.400 --> 27:54.400
+Su emprendedor no va a entender su algoritmo técnico.
+
+27:55.400 --> 27:58.400
+Miren, nosotros no entendemos los algoritmos todavía de las redes sociales.
+
+27:59.400 --> 28:02.400
+Si los entendieron, son toditos para los influentes.
+
+28:03.400 --> 28:06.400
+Pero muy pocos llegan a entender esa parte.
+
+28:07.400 --> 28:10.400
+Por eso es que es mejor que ustedes tengan un temilito.
+
+28:11.400 --> 28:12.400
+Perfecto.
+
+28:13.360 --> 28:16.360
+A veces me disculpe cuáles son los usuarios que deberían participar en el sistema.
+
+28:17.360 --> 28:20.360
+Y algunos son los estudiantes, los docentes, pero qué otro...
+
+28:21.360 --> 28:22.360
+Padres, familia.
+
+28:23.360 --> 28:30.360
+Como mencionaba también hace rato que a veces hay personas que no saben sacar a hacer los permisos.
+
+28:31.360 --> 28:40.360
+Debería también poner contacto de personas que ya tienen su emprendimiento para que les ayuden.
+
+28:41.320 --> 28:44.320
+O yo ahí, ahí, una red de voluntarios.
+
+28:45.320 --> 28:48.320
+Como que digas, por ejemplo, hola, ¿cuál es tu idea de negocio?
+
+28:49.320 --> 28:50.320
+Yo voy a hacer chocolates.
+
+28:51.320 --> 28:54.320
+Entonces, ¿quieres conocer el testimonio de un emprendedor de chocolates?
+
+28:55.320 --> 28:57.320
+Sí, muy bien, te contarto con Juan.
+
+28:58.320 --> 28:59.320
+¿Te das cuenta?
+
+29:00.320 --> 29:01.320
+Ahí no queda muy suelto.
+
+29:05.320 --> 29:09.320
+¿Considera importante que exista control sobre quién publica o hay información institucional?
+
+29:10.280 --> 29:12.280
+Pero que sea a través de la automatización.
+
+29:13.280 --> 29:14.280
+¿Qué significa?
+
+29:15.280 --> 29:22.280
+Que te pongan una guía que detecte ciertos temas de privacidad, de violencia y todo ese tipo de cosas.
+
+29:23.280 --> 29:24.280
+Porque va a ser duro.
+
+29:25.280 --> 29:30.280
+Imagínense ustedes dando clic a 200 emprendedores por día.
+
+29:31.280 --> 29:36.280
+Un puesto subutilizado y un costo alto para su plataforma.
+
+29:37.240 --> 29:38.240
+Que sea como un detector.
+
+29:39.240 --> 29:49.240
+Tal como son los remes, ellos tienen guías que detectan este tema de insultos, de malas palabras, mal comportamiento y para amabilidad eso.
+
+29:50.240 --> 29:57.240
+Le gustaría también que la plataforma sea un centro para dar a conocer los emprendimientos o también que sea tipo un marketplace.
+
+29:58.240 --> 30:06.240
+Por ejemplo, yo quiero ver un chocolate y que este, por ejemplo, un botón de compare, que eso le envíe un correo al emprendedor.
+
+30:07.240 --> 30:10.240
+Solo sería poner contacto al emprendedor si tú quieres comprar.
+
+30:11.240 --> 30:14.240
+¿Podría hacer ese marketplace ya?
+
+30:15.240 --> 30:18.240
+Puede ser el centro de apoyo, información y todo, pero también como que...
+
+30:19.240 --> 30:21.240
+...tirar a marketplace.
+
+30:21.240 --> 30:22.240
+Efectivamente.
+
+30:24.240 --> 30:25.240
+Entonces, estaría...
+
+30:26.240 --> 30:29.240
+Eso sería todo. Muchas gracias por su tiempo.
+
+30:30.240 --> 30:32.240
+Encatadis. Estoy a la zona.
+
+30:33.200 --> 30:39.200
+Sería dentro de unas dos o tres semanas más o menos le enviamos un correo.
+
+30:40.200 --> 30:41.200
+Sí, por favor.
+
+30:42.200 --> 30:43.200
+Sí, entonces le enviamos un correo.
+
+30:44.200 --> 30:48.200
+Sí, porque ahorita lo que estamos haciendo en vacaciones, vamos a desarrollar lo que sería mi antifigma.
+
+30:49.200 --> 30:54.200
+Cómo más o menos se vería, lo que sería la parte web, cómo es nuestra idea.
+
+30:55.200 --> 30:57.200
+Para ver qué podemos mejorar, qué podemos quitar.
+
+30:58.160 --> 31:01.160
+Chévere, pero también pregúntenle a un estudiante.
+
+31:02.160 --> 31:03.160
+¿Sólo de cualquier ciclo?
+
+31:04.160 --> 31:09.160
+Ajá, que tenga una característica de emprendedor para que él también les dé un feedback.
+
+31:09.160 --> 31:10.160
+Eso es importante.
+
+31:11.160 --> 31:12.160
+Chévere, chicos. Un gusto.
+
+31:12.160 --> 31:13.160
+Gracias.
+
+31:13.160 --> 31:14.160
+Chévere a todos.
+
