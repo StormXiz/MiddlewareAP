@@ -1,0 +1,175 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// --- Gestión de Usuarios ---
+
+model Usuario {
+  id              Int             @id @default(autoincrement())
+  nombre          String
+  apellido        String
+  email           String          @unique
+  cedula          String?         @unique
+  telefono        String?
+  fechaRegistro   DateTime        @default(now())
+  
+  // Relaciones
+  auth            Auth?
+  roles           Rol[]
+  emprendimientos Emprendimiento[]
+  mentoriasComoTutor Mentoria[]   @relation("TutorMentorias")
+  resenas         Resena[]
+  
+  @@map("usuarios")
+}
+
+model Auth {
+  id        Int      @id @default(autoincrement())
+  password  String   // Hash de contraseña
+  usuarioId Int      @unique
+  usuario   Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  @@map("auth")
+}
+
+model Rol {
+  id          Int      @id @default(autoincrement())
+  nombre      String   @unique // 'ADMIN', 'EMPRENDEDOR', 'MENTOR', 'CLIENTE'
+  usuarios    Usuario[]
+
+  @@map("roles")
+}
+
+// --- Core del Negocio ---
+
+model Categoria {
+  id              Int              @id @default(autoincrement())
+  nombre          String           @unique
+  descripcion     String?
+  emprendimientos Emprendimiento[]
+
+  @@map("categorias")
+}
+
+model Emprendimiento {
+  id              Int             @id @default(autoincrement())
+  nombre          String
+  descripcion     String?         @db.Text
+  fechaCreacion   DateTime        @default(now())
+  estado          EstadoEmprendimiento @default(EN_REVISION)
+
+  // Foreign Keys
+  usuarioId       Int
+  categoriaId     Int
+  
+  // Relaciones
+  usuario         Usuario         @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  categoria       Categoria       @relation(fields: [categoriaId], references: [id])
+  productos       Producto[]
+  redesSociales   RedesSociales?
+  mentorias       Mentoria[]
+  resenas         Resena[]
+  promociones     Promocion[]
+
+  @@map("emprendimientos")
+}
+
+enum EstadoEmprendimiento {
+  ACTIVO
+  INACTIVO
+  EN_REVISION
+  EN_INCUBACION
+}
+
+model Producto {
+  id              Int             @id @default(autoincrement())
+  nombre          String
+  descripcion     String?         @db.Text
+  precio          Decimal         @db.Decimal(10, 2)
+  imagenUrl       String?
+  activo          Boolean         @default(true)
+  
+  // Relaciones
+  emprendimientoId Int
+  emprendimiento   Emprendimiento @relation(fields: [emprendimientoId], references: [id], onDelete: Cascade)
+
+  @@map("productos")
+}
+
+model RedesSociales {
+  id               Int            @id @default(autoincrement())
+  instagram        String?
+  facebook         String?
+  tiktok           String?
+  whatsapp         String?
+  website          String?
+  
+  // Relaciones
+  emprendimientoId Int            @unique
+  emprendimiento   Emprendimiento @relation(fields: [emprendimientoId], references: [id], onDelete: Cascade)
+
+  @@map("redes_sociales")
+}
+
+// --- Mentorías y Features ---
+
+model Mentoria {
+  id               Int            @id @default(autoincrement())
+  tema             String
+  fechaProgramada  DateTime
+  estado           EstadoMentoria @default(PROGRAMADA)
+  notas            String?        @db.Text
+  
+  // Relaciones
+  tutorId          Int
+  tutor            Usuario        @relation("TutorMentorias", fields: [tutorId], references: [id], onDelete: Cascade)
+  emprendimientoId Int
+  emprendimiento   Emprendimiento @relation(fields: [emprendimientoId], references: [id], onDelete: Cascade)
+
+  @@map("mentorias")
+}
+
+enum EstadoMentoria {
+  PROGRAMADA
+  COMPLETADA
+  CANCELADA
+}
+
+model Resena {
+  id               Int            @id @default(autoincrement())
+  calificacion     Int            // 1-5
+  comentario       String?        @db.Text
+  fecha            DateTime       @default(now())
+  
+  // Relaciones
+  usuarioId        Int
+  usuario          Usuario        @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  emprendimientoId Int
+  emprendimiento   Emprendimiento @relation(fields: [emprendimientoId], references: [id], onDelete: Cascade)
+
+  @@map("resenas")
+}
+
+model Promocion {
+  id               Int            @id @default(autoincrement())
+  titulo           String
+  descripcion      String?
+  fechaInicio      DateTime
+  fechaFin         DateTime
+  descuento        String?        //Ej: "20%" o "2x1"
+  activo           Boolean        @default(true)
+  
+  // Relaciones
+  emprendimientoId Int
+  emprendimiento   Emprendimiento @relation(fields: [emprendimientoId], references: [id])
+
+  @@map("promociones")
+}

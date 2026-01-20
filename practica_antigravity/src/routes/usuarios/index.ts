@@ -28,6 +28,13 @@ const userRoutes: FastifyPluginAsync = async (fastify, opts) => {
                         nombre: { type: 'string' },
                         email: { type: 'string' }
                     }
+                },
+                500: {
+                    description: 'Error en el servidor',
+                    type: 'object',
+                    properties: {
+                        error: { type: 'string' }
+                    }
                 }
             }
         }
@@ -71,8 +78,54 @@ const userRoutes: FastifyPluginAsync = async (fastify, opts) => {
         }
     });
 
-    // Login (Dummy implementation)
-    fastify.post('/login', async (request, reply) => {
+    // Login
+    fastify.post('/login', {
+        schema: {
+            description: 'Iniciar sesión en la plataforma',
+            tags: ['Usuarios'],
+            body: {
+                type: 'object',
+                required: ['email', 'password'],
+                properties: {
+                    email: { type: 'string', format: 'email' },
+                    password: { type: 'string' }
+                }
+            },
+            response: {
+                200: {
+                    description: 'Inicio de sesión exitoso',
+                    type: 'object',
+                    properties: {
+                        token: { type: 'string' },
+                        user: {
+                            type: 'object',
+                            properties: {
+                                id: { type: 'number' },
+                                email: { type: 'string' },
+                                roles: {
+                                    type: 'array',
+                                    items: {
+                                        type: 'object',
+                                        properties: {
+                                            id: { type: 'number' },
+                                            nombre: { type: 'string' }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                401: {
+                    description: 'Credenciales inválidas',
+                    type: 'object',
+                    properties: {
+                        error: { type: 'string' }
+                    }
+                }
+            }
+        }
+    }, async (request, reply) => {
         const { email, password } = request.body as any;
 
         const user = await fastify.prisma.usuario.findUnique({
